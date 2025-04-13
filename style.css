@@ -1,0 +1,146 @@
+
+@keyframes swoosh{
+    30% {
+        transform: translateX(-50px);
+    }
+    70%{
+        transform: translateX(50px);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+
+
+body {
+   margin: 0;
+   padding: 0;
+    -webkit-user-select: none;
+    user-select: none;
+    margin-top: 40px;
+    background-image: url(cool-background.png);
+    background-size: cover;
+    animation-name: swoosh;
+    animation-duration: 2s;
+    
+}
+
+#sfondo{
+    
+    margin: 0 auto; 
+    border-radius: 5px 5px 0 0;
+    width: 80vw;
+    height:  2000px;
+    background-color: rgb(255, 255, 255);
+}
+
+#allI{
+    padding-top: 5vh;
+}
+
+#header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   width: 90%;
+    margin-left: 5% ;
+    height: 70px;
+    border-radius: 5px;
+    background-color: white;
+    text-align: center;
+    
+    
+}
+#innerHeader{
+    
+    text-align: center;
+    display: inline-block;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: "Madimi One", sans-serif;
+    
+    
+    
+}
+#indiceContainer{
+    display: flex;
+    flex-direction: column;
+    
+    width: 65vw;
+    margin: 10px auto;
+    background: linear-gradient(90deg, rgba(143,159,241,1) 15%, rgba(2,197,237,1) 95%);
+    border-radius: 3px;
+}
+#indiceTitle{
+    cursor: default;
+    text-align: center;
+    width: 130px;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-left: 80px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Dancing Script", cursive;
+    rotate: 1.5deg;
+    font-size: 50px;
+    
+}
+
+
+#a{
+    text-decoration: none;
+    color: white;
+}
+
+#indiceBlocks {
+
+    cursor: default;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 60vw;
+    height: 420px;
+    margin: 0 auto;
+   
+    font-family: "Boldonse", system-ui;
+}
+#indiceS {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+#indiceG {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.indice {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 2px;
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+}
+.sopraIndice {
+    cursor: pointer;
+    padding-top: 10px;
+    text-align: center;
+    border-radius: 5px;
+    color: snow;
+    width: 100%;
+    background-color: black;
+    height: 35px;
+    letter-spacing: 2px;
+}
+.sottoIndice {
+    width: 100%;
+    background-size: contain;
+    background-color: black;
+    height: 90px;
+    border-radius: 0 0 5px 5px;
+}
+
