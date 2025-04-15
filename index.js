@@ -19,14 +19,3 @@ sopraIndice.forEach(element => {
 });
 
 
-document.getElementById("menuIcon").addEventListener("click", function() {
-     if (click == 0) {
-        this.style.backgroundColor = "red"  
-        click += 1  
-    } else if (click == 1) {
-        this.style.backgroundColor = "white"
-        click = 0
-    }
-    
-    
-})
