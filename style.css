@@ -13,7 +13,6 @@
 
 
 
-
 body {
    margin: 0;
    padding: 0;
@@ -144,3 +143,17 @@ body {
     border-radius: 0 0 5px 5px;
 }
 
+
+#mtTecnologia{
+    
+    display: inline-block;
+    border: 5px solid black;    
+    width: 75vw;
+}
+
+
+
+#ctImmagini{
+    display: flex;
+    gap: 20px;
+}
