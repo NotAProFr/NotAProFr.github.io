@@ -1,6 +1,4 @@
 const sopraIndice = document.querySelectorAll(".sopraIndice");
-let menu = document.getElementsByClassName("material-symbols-outlined")
-let click = 0
 
 sopraIndice.forEach(element => {
     element.addEventListener("mouseover", () => {
@@ -19,3 +17,30 @@ sopraIndice.forEach(element => {
 });
 
 
+const imgT = document.querySelectorAll(".mtTP1");
+const txtT = document.getElementsByClassName("P1");
+
+imgT.forEach(element => {
+let isVisible = false; 
+
+element.addEventListener("click", () => {
+    const child = element.children[0];
+    if (!isVisible) {
+        child.style.transition = "200ms";
+        child.style.display = "block";
+        child.style.backgroundColor = "white";
+        child.style.borderRadius = "5px";
+        setTimeout(() => {
+            child.style.transform = "translateY(-5px)";
+        }, 100);
+        isVisible = true; 
+    } else {
+        child.style.transition = "100ms";
+        child.style.transform = "translateY(5px)";
+        setTimeout(() => {
+            child.style.display = "none";
+        }, 100);
+        isVisible = false; 
+    }
+});
+});
